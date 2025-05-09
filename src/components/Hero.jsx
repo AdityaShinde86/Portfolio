@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Chartoon from "../assets/images/Chartoon.png";
+import newpho from '../assets/images/newpho.png';
 import Type from "./Type";
 
 const socialMediaLinks = [
@@ -28,7 +28,7 @@ const Hero = () => {
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
       <div className="flex-1 flex items-center justify-center h-full">
-        <img src={Chartoon} alt="" className="md:w-2/3 h-auto object-cover" />
+        <img src={newpho} alt="" className="md:w-2/3 h-auto object-cover" />
       </div>
       <div className="flex-1">
         <div className="md:text-left text-center">
