@@ -6,6 +6,6 @@ live preview : https://m-portfolio-webpage.netlify.app/
 1.npm i
 2.npm run dev
 
-mail: codeaprogram@gmail.com
+mail: addityashinde3@gmail.com
 
 happy coding :)
