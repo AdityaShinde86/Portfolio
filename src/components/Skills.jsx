@@ -1,46 +1,48 @@
 import React from 'react';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaBootstrap } from 'react-icons/fa';
+import { SiCplusplus } from 'react-icons/si';
 
 const Skills = () => {
   const skills = [
     {
       name: "HTML",
-      logo: "logo-html5",
+      icon: <FaHtml5 />,
       level: "Intermediate",
       count: 100,
     },
     {
       name: "CSS",
-      logo: "logo-css3",
+      icon: <FaCss3Alt />,
       level: "Intermediate",
       count: 100,
     },
     {
       name: "JAVASCRIPT",
-      logo: "logo-javascript",
+      icon: <FaJs />,
       level: "Intermediate",
       count: 100,
     },
     {
       name: "REACT",
-      logo: "logo-react",
+      icon: <FaReact />,
       level: "Intermediate",
       count: 100,
     },
     {
       name: "Java",
-      logo: "cafe", // Alternative icon for Java (coffee cup)
+      icon: <FaJava />,
       level: "Intermediate",
       count: 100,
     },
     {
       name: "Bootstrap",
-      logo: "logo-css3", // Ionicons has this one
+      icon: <FaBootstrap />,
       level: "Intermediate",
       count: 100,
     },
     {
       name: "C++",
-      logo: "code", // Alternative icon for C++
+      icon: <SiCplusplus />,
       level: "Intermediate",
       count: 100,
     }
@@ -67,7 +69,7 @@ const Skills = () => {
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                  {skill.icon}
                 </div>
               </div>
               <p className="text-xl mt-3">{skill.level}</p>
